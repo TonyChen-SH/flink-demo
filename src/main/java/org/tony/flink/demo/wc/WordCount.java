@@ -21,10 +21,13 @@ public class WordCount {
                 .groupBy(0) // 按照第一个位置的word分组
                 .sum(1);// 将第二个位置上的数据求和
 
+        // @todo 没有解决怎么debug脚本的问题
+        //       内部类不能是private，不然debug调式不到..
+        //       是public的时候，可以调试到。
         sum.print();
     }
 
-    private static class SplitCount implements FlatMapFunction<String, Tuple2<String, Integer>> {
+    public static class SplitCount implements FlatMapFunction<String, Tuple2<String, Integer>> {
         @Override
         public void flatMap(String value, Collector<Tuple2<String, Integer>> out) {
             String[] words = value.split(" ");
