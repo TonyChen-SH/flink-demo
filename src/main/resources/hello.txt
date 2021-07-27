@@ -3,5 +3,3 @@ hello flink
 hello spark
 hello scala
 hello google
-
-haha ho ho.
