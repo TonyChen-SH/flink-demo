@@ -29,6 +29,11 @@
             <artifactId>flink-clients_2.12</artifactId>
             <version>1.13.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
 
         <!--日志相关-->
 <!--        <dependency>-->
